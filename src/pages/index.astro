@@ -1,12 +1,62 @@
 ---
+import { Image } from "astro:assets";
 import Nav from "../components/Nav.astro";
 import Layout from "../layouts/Layout.astro";
+import amyImage from "../assets/amy-no-background.png";
 ---
 
 <Layout title="Home">
   <Nav />
-  <p>
-    Hello, my name is Amy, I've been working as a Front end Software Engineer
-    for the past three years.
-  </p>
+  <div class="main-content">
+    <div class="left-column">
+      <p>
+        Hello, I'm Amy. <br />
+        I'm a Frontend Software Engineer.
+      </p>
+      <p>4 Years of Experience</p>
+    </div>
+    <Image
+      src={amyImage}
+      alt="An image of Amy Greene"
+      width="400"
+      height="450"
+    />
+    <div class="right-column">
+      <p>
+        I enjoy building beautiful, accessible web applications that focus on
+        user experience.
+      </p>
+      <a href="/portfolio">View My Work</a>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  .main-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  Image {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+</style>
