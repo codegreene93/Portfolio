@@ -1,5 +1,20 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from "astro/config";
 
 // https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Instrument Serif",
+      cssVariable: "--font-instrument-serif",
+      weights: [400],
+    },
+    {
+      provider: fontProviders.google(),
+      name: "Instrument Sans",
+      cssVariable: "--font-instrument-sans",
+      weights: [400, 700],
+    },
+  ],
+});
