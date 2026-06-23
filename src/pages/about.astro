@@ -1,19 +1,28 @@
 ---
+import Card from "../components/Card.astro";
 import Nav from "../components/Nav.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="About">
   <Nav />
-  <h1>About Me</h1>
-  <p>
-    I've spent the last few years working as a Front end Developer, building
-    websites and products that are intuitive, accessible, and enjoyable to use.
-    What I enjoy most is bringing designs to life and thinking about the people
-    on the other side of the screen. Accessibility is something I care deeply
-    about, and I try to consider it throughout the development process rather
-    than treating it as an afterthought. I'm also interested in the bigger
-    picture of a product: how it supports user needs, how it reflects the
-    product I'm building.
-  </p>
+  <div class="left-column">
+    <Card icon="fa-solid fa-code" title="Frontend Development" />
+    <Card icon="fa-solid fa-paint-brush" title="Web Development" />
+    <Card icon="fa-solid fa-mobile-screen" title="Mobile App Development" />
+  </div>
+
+  <div class="right-column">
+    <h1>About Me</h1>
+    <p>
+      I've spent the last few years working as a Front end Developer, building
+      websites and products that are intuitive, accessible, and enjoyable to
+      use. What I enjoy most is bringing designs to life and thinking about the
+      people on the other side of the screen. Accessibility is something I care
+      deeply about, and I try to consider it throughout the development process
+      rather than treating it as an afterthought. I'm also interested in the
+      bigger picture of a product: how it supports user needs, how it reflects
+      the product I'm building.
+    </p>
+  </div>
 </Layout>
