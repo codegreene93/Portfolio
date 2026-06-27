@@ -6,23 +6,62 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="About">
   <Nav />
-  <div class="left-column">
-    <Card icon="fa-solid fa-code" title="Frontend Development" />
-    <Card icon="fa-solid fa-paint-brush" title="Web Development" />
-    <Card icon="fa-solid fa-mobile-screen" title="Mobile App Development" />
-  </div>
+  <div class="main-content">
+    <div class="left-column">
+      <Card
+        icon="proicons:code"
+        title="Frontend Development"
+        iconBackground="#cdd4b1"
+      />
+      <Card
+        icon="proicons:computer"
+        title="Web Development"
+        iconBackground="#D5BB95"
+      />
+      <Card
+        icon="proicons:phone"
+        title="Mobile App Development"
+        iconBackground="#DCA278"
+      />
+    </div>
 
-  <div class="right-column">
-    <h1>About Me</h1>
-    <p>
-      I've spent the last few years working as a Front end Developer, building
-      websites and products that are intuitive, accessible, and enjoyable to
-      use. What I enjoy most is bringing designs to life and thinking about the
-      people on the other side of the screen. Accessibility is something I care
-      deeply about, and I try to consider it throughout the development process
-      rather than treating it as an afterthought. I'm also interested in the
-      bigger picture of a product: how it supports user needs, how it reflects
-      the product I'm building.
-    </p>
+    <div class="right-column">
+      <h1>About Me</h1>
+      <p>
+        I've spent the last few years working as a Front end Developer, building
+        websites and products that are intuitive, accessible, and enjoyable to
+        use. What I enjoy most is bringing designs to life and thinking about
+        the people on the other side of the screen. Accessibility is something I
+        care deeply about, and I try to consider it throughout the development
+        process rather than treating it as an afterthought. I'm also interested
+        in the bigger picture of a product: how it supports user needs, how it
+        reflects the product I'm building.
+      </p>
+    </div>
   </div>
 </Layout>
+
+<style>
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .left-column {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right-column {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+</style>

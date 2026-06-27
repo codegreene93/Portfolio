@@ -1,9 +1,45 @@
 ---
+import { Icon } from "astro-icon/components";
 
+const { icon, title, iconBackground = "#cdd4b1" } = Astro.props;
 ---
 
 <div class="card">
-  <i>{Astro.props.icon}</i>
-  <h3>{Astro.props.title}</h3>
+  <div class="icon-container" style={`background-color: ${iconBackground};`}>
+    <Icon class="icon" name={icon} />
+  </div>
+  <h3>{title}</h3>
   <slot />
 </div>
+
+<style>
+  .card {
+    display: flex;
+    flex-direction: row;
+    background-color: #feecd0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    align-self: center;
+    color: #333;
+  }
+  .icon-container {
+    padding: 12px;
+    border-radius: 100%;
+  }
+  .icon {
+    font-size: 2rem;
+    color: #fff;
+  }
+</style>
