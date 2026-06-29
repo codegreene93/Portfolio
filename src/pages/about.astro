@@ -17,11 +17,13 @@ import Layout from "../layouts/Layout.astro";
         icon="proicons:computer"
         title="Web Development"
         iconBackground="#D5BB95"
+        style="margin-top: 2rem;"
       />
       <Card
         icon="proicons:phone"
         title="Mobile App Development"
         iconBackground="#DCA278"
+        style="margin-top: 2rem;"
       />
     </div>
 
@@ -45,11 +47,11 @@ import Layout from "../layouts/Layout.astro";
   .main-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    height: calc(100vh - 50px);
   }
 
   .left-column {
+    display: flex;
     flex: 1;
     flex-direction: column;
     text-align: center;
@@ -58,6 +60,7 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .right-column {
+    display: flex;
     flex: 1;
     flex-direction: column;
     text-align: center;

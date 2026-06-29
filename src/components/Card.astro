@@ -1,10 +1,10 @@
 ---
 import { Icon } from "astro-icon/components";
 
-const { icon, title, iconBackground = "#cdd4b1" } = Astro.props;
+const { icon, title, iconBackground = "#cdd4b1", style } = Astro.props;
 ---
 
-<div class="card">
+<div class="card" style={style}>
   <div class="icon-container" style={`background-color: ${iconBackground};`}>
     <Icon class="icon" name={icon} />
   </div>
@@ -22,6 +22,7 @@ const { icon, title, iconBackground = "#cdd4b1" } = Astro.props;
     padding: 20px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
+    width: 40vw;
   }
 
   .card:hover {
@@ -29,7 +30,8 @@ const { icon, title, iconBackground = "#cdd4b1" } = Astro.props;
   }
 
   .card h3 {
-    margin-top: 10px;
+    flex: 1;
+    text-align: center;
     font-size: 1.2rem;
     align-self: center;
     color: #333;
