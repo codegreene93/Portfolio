@@ -5,10 +5,457 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="CV">
   <Nav />
-  <h1>CV</h1>
-  <p>
-    Below you will find me CV. I will try my best to keep it up to date however
-    should you wish to get an up to date version I would encourage you to reach
-    out to me on linkedIn or my email.
-  </p>
+
+  <body>
+    <div class="header">
+      <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+          <td>
+            <h1 class="name">Amy Greene</h1>
+            <div class="title">Front End Software Engineer</div>
+          </td>
+          <td
+            style="text-align: right; vertical-align: top; font-size: 9pt; color: #4a5568;"
+          >
+            <strong>Location:</strong> Bristol, UK (Irish Citizen, open to EU & UK
+            relocation)
+          </td>
+        </tr>
+      </table>
+
+      <table class="contact-table">
+        <tr>
+          <td style="width: 33%;"><strong>Phone:</strong> 07519941980</td>
+          <td style="width: 33%; text-align: center;"
+            ><strong>Email:</strong> amy.greene029@gmail.com</td
+          >
+          <td style="width: 33%; text-align: right;"
+            ><strong>LinkedIn:</strong> linkedin.com/in/amy-greene-479a88a7</td
+          >
+        </tr>
+        <tr>
+          <td><strong>GitHub:</strong> github.com/codegreene93</td>
+          <td style="text-align: center;"
+            ><strong>Portfolio:</strong> eloquent-villani-b86bee.netlify.app</td
+          >
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section-title">Profile</div>
+    <div class="profile-text">
+      Front end developer specialising in JavaScript and React. Experienced in
+      delivering comprehensive redesigns to ensure mobile responsiveness and
+      compliance with WCAG AA accessibility standards. Comfortable working in
+      agile environments alongside cross-functional teams to consistently
+      achieve sprint goals. Demonstrated success in scaling internal utilities
+      into production-ready customer applications and implementing scalable
+      corporate technical solutions.
+    </div>
+
+    <div class="section-title">Technology Skills</div>
+    <table class="tech-table">
+      <tr>
+        <td class="tech-label">HTML & CSS</td>
+        <td class="tech-value"
+          >Strong understanding of core concepts around HTML and CSS.</td
+        >
+      </tr>
+      <tr>
+        <td class="tech-label">Bootstrap</td>
+        <td class="tech-value"
+          >Comfortable using Bootstrap 5 as a CSS Framework.</td
+        >
+      </tr>
+      <tr>
+        <td class="tech-label">JavaScript</td>
+        <td class="tech-value"
+          >Strong experience interacting with JavaScript core concepts.</td
+        >
+      </tr>
+      <tr>
+        <td class="tech-label">React</td>
+        <td class="tech-value"
+          >Use React daily as part of professional roles and fully comfortable
+          with the framework.</td
+        >
+      </tr>
+      <tr>
+        <td class="tech-label">TypeScript</td>
+        <td class="tech-value"
+          >Daily professional use; comfortable with adding types to components
+          and creating interfaces.</td
+        >
+      </tr>
+      <tr>
+        <td class="tech-label">GraphQL & Apollo</td>
+        <td class="tech-value"
+          >Comfortable executing queries and basic mutations from the client
+          side.</td
+        >
+      </tr>
+      <tr>
+        <td class="tech-label">End-to-End Testing</td>
+        <td class="tech-value"
+          >Regularly write robust end-to-end test suites using Playwright,
+          Cypress, and TestCafe.</td
+        >
+      </tr>
+      <tr>
+        <td class="tech-label">Unit Testing</td>
+        <td class="tech-value"
+          >Moderate understanding of writing unit tests using Jest.</td
+        >
+      </tr>
+    </table>
+
+    <div class="section-title">Work Experience</div>
+
+    <div class="job-block">
+      <table class="job-header-table">
+        <tr>
+          <td class="job-title">Front End Software Engineer</td>
+          <td class="job-date">Sep 2024 – Present</td>
+        </tr>
+      </table>
+      <div class="company-name">Viper Innovations | Bristol, UK</div>
+      <div class="job-desc">
+        Engineering house specialising in cable manufacturing and monitoring
+        platforms for offshore rigs.
+      </div>
+      <ul class="bullet-list">
+        <li>
+          Assisted in bringing an internal-facing insulation resistance
+          monitoring platform (Platform Vi) to a customer-ready state using
+          React, TypeScript, and JavaScript.
+        </li>
+        <li>
+          Redesigned multiple core pages, executed visual platform improvements,
+          and securely implemented authentication mechanisms.
+        </li>
+        <li>
+          Built an intuitive administration user interface for granting user
+          access rights and assigning specialized roles.
+        </li>
+        <li>
+          Developed a hardware monitoring tool to analyze hardware displacement
+          across rigs, identifying cross-selling and upselling opportunities.
+        </li>
+        <li>
+          Upgraded and maintained system packages while systematically
+          identifying and mitigating security vulnerabilities.
+        </li>
+        <li>
+          Maintained and expanded the end-to-end automated test suites using
+          Cypress, and engaged in code reviews via Git.
+        </li>
+        <li>
+          Mentored a placement student over a 6-month period, guiding her
+          through Figma, CSS, React, and Jest.
+        </li>
+      </ul>
+    </div>
+
+    <div class="job-block">
+      <table class="job-header-table">
+        <tr>
+          <td class="job-title">Front End Developer</td>
+          <td class="job-date">Jan 2022 – Sep 2024</td>
+        </tr>
+      </table>
+      <div class="company-name">Immersive Labs | Bristol, UK</div>
+      <div class="job-desc">
+        B2B cyber security training platform focusing on simulated exercises for
+        corporate workforces and C-suite executives.
+      </div>
+      <ul class="bullet-list">
+        <li>
+          Spearheaded a complete project redesign using React, TypeScript, and
+          JavaScript to achieve full compliance with WCAG AA standards and
+          mobile responsiveness.
+        </li>
+        <li>
+          Co-developed from scratch a training platform rolled out to workforces
+          of 1,000+ people, crafting user interfaces and integration with
+          GraphQL queries and mutations.
+        </li>
+        <li>
+          Contributed to "Crisis Sim", a cyber attack simulator designed for
+          CISO and C-suite training; developed advanced filtering, editing
+          features, and front-end UI enhancements.
+        </li>
+        <li>
+          Collaborated continuously with design teams to translate wireframes
+          and UI designs into fully functional components.
+        </li>
+        <li>
+          Wrote end-to-end automated test suites utilizing TestCafe and
+          JavaScript across multiple product tracks.
+        </li>
+        <li>
+          Actively contributed as a member of the internal Accessibility Guild,
+          advising engineering teams on digital inclusion and compliance.
+        </li>
+        <li>
+          Authored complete onboarding documentation for engineering juniors
+          detailing environment setups and standard Git workflows.
+        </li>
+      </ul>
+    </div>
+
+    <div class="job-block">
+      <table class="job-header-table">
+        <tr>
+          <td class="job-title">Junior Web Developer</td>
+          <td class="job-date">June 2021 – Dec 2021</td>
+        </tr>
+      </table>
+      <div class="company-name">Navos Technologies</div>
+      <ul class="bullet-list">
+        <li>
+          Served as the team's dedicated Front End Developer, maintaining and
+          updating client web applications and the core company website.
+        </li>
+        <li>
+          Conducted formal code audits of client systems and authored granular
+          runbooks and technical documentation.
+        </li>
+        <li>
+          Developed custom WordPress themes using PHP and integrated frontend
+          components.
+        </li>
+        <li>
+          Implemented client side validation and structured unit testing using
+          Jest.
+        </li>
+      </ul>
+    </div>
+
+    <div class="job-block">
+      <table class="job-header-table">
+        <tr>
+          <td class="job-title"
+            >HR Administrator / Assistant / Managerial Roles</td
+          >
+          <td class="job-date">2013 – 2021</td>
+        </tr>
+      </table>
+      <div class="company-name">
+        Health Services Staff Credit Union / The Doyle Collection / Ritz Carlton
+      </div>
+      <ul class="bullet-list">
+        <li>
+          <strong>HR Administrator (HSSCU, 2019-2021):</strong> Managed full-cycle
+          onboarding, processed payroll, authored company-wide policies, and modernized
+          the corporate HRIS interface.
+        </li>
+        <li>
+          <strong>Hospitality Management Career (2013-2019):</strong> Progressed through
+          competitive management tracks including Duty Manager, Reception Supervisor,
+          and Quality Supervisor at premier properties.
+        </li>
+      </ul>
+    </div>
+
+    <div class="section-title">Education</div>
+
+    <div class="edu-block">
+      <table style="width:100%; border-collapse:collapse;">
+        <tr>
+          <td class="edu-title"
+            >Higher Diploma in Science in Computing (Grade: 2:1)</td
+          >
+          <td class="edu-date">2020</td>
+        </tr>
+      </table>
+      <div class="edu-details">National College of Ireland</div>
+      <div style="font-size: 8.5pt; color: #718096; margin-top: 2px;">
+        Modules: Data Structures & Algorithms, Object Oriented Software
+        Engineering, Server Side Development, Software Development (Java), Web
+        Services & API Development, Web Design, Databases.
+      </div>
+    </div>
+
+    <div class="edu-block">
+      <table style="width:100%; border-collapse:collapse;">
+        <tr>
+          <td class="edu-title"
+            >BBS Business and International Hotel Management (Grade: 2:1)</td
+          >
+          <td class="edu-date">2012 – 2017</td>
+        </tr>
+      </table>
+      <div class="edu-details">Shannon College of Hotel Management</div>
+    </div>
+
+    <div class="section-title">Interests & Achievements</div>
+    <ul class="bullet-list">
+      <li>
+        <strong>Community Engagement:</strong> Regular attendee and active participant
+        at CodeHub meetups, collaborating bi-weekly with local developers on emerging
+        engineering trends and modern workflows.
+      </li>
+    </ul>
+
+    <div class="references">References available upon request.</div>
+  </body>
 </Layout>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  @page {
+    size: A4;
+    margin: 15mm 15mm;
+    background-color: #ffffff;
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 8pt;
+      color: #718096;
+    }
+  }
+  body {
+    margin: 0;
+    padding: 8px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #2d3748;
+    line-height: 1.5;
+    font-size: 10pt;
+  }
+  .header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2b6cb0;
+    padding-bottom: 15px;
+  }
+  .name {
+    font-size: 24pt;
+    font-weight: bold;
+    color: #1a365d;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .title {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #2b6cb0;
+    margin: 0 0 15px 0;
+  }
+  .contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+  }
+  .contact-table td {
+    padding: 2px 0;
+    font-size: 9pt;
+    color: #4a5568;
+    vertical-align: top;
+  }
+  .section-title {
+    font-size: 13pt;
+    font-weight: bold;
+    color: #1a365d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 20px 0 10px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e2e8f0;
+    page-break-after: avoid;
+  }
+  .profile-text {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  .job-block {
+    margin-bottom: 15px;
+    page-break-inside: avoid;
+  }
+  .job-header-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+  }
+  .job-title {
+    font-size: 11pt;
+    font-weight: bold;
+    color: #2d3748;
+    text-align: left;
+  }
+  .job-date {
+    font-size: 10pt;
+    font-weight: 600;
+    color: #4a5568;
+    text-align: right;
+    width: 150px;
+  }
+  .company-name {
+    font-size: 10pt;
+    font-weight: 600;
+    color: #2b6cb0;
+    margin-bottom: 5px;
+  }
+  .job-desc {
+    font-size: 9.5pt;
+    color: #4a5568;
+    margin-bottom: 6px;
+    font-style: italic;
+  }
+  ul.bullet-list {
+    margin: 0 0 10px 0;
+    padding-left: 15px;
+  }
+  ul.bullet-list li {
+    margin-bottom: 4px;
+    font-size: 9.5pt;
+    color: #2d3748;
+  }
+  .tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+  }
+  .tech-table td {
+    padding: 4px 0;
+    vertical-align: top;
+    font-size: 9.5pt;
+  }
+  .tech-label {
+    font-weight: bold;
+    color: #2d3748;
+    width: 220px;
+  }
+  .tech-value {
+    color: #4a5568;
+  }
+  .edu-block {
+    margin-bottom: 12px;
+    page-break-inside: avoid;
+  }
+  .edu-title {
+    font-size: 11pt;
+    font-weight: bold;
+    color: #2d3748;
+  }
+  .edu-date {
+    font-size: 10pt;
+    font-weight: 600;
+    color: #4a5568;
+    text-align: right;
+    width: 120px;
+  }
+  .edu-details {
+    font-size: 9.5pt;
+    color: #4a5568;
+    margin-top: 2px;
+  }
+  .references {
+    font-style: italic;
+    color: #718096;
+    margin-top: 20px;
+    font-size: 9.5pt;
+  }
+</style>
