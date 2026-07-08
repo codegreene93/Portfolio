@@ -1,12 +1,17 @@
 ---
 import { Icon } from "astro-icon/components";
+
+const { image, title } = Astro.props;
+const imageSrc = typeof image === "string" ? image : image?.src;
 ---
 
 <div class="card">
-  <img src={Astro.props.image} alt={Astro.props.title} />
-  <h2>{Astro.props.title}</h2>
+  <img src={imageSrc} alt={title} />
+  <h2>{title}</h2>
   <slot />
-  <Icon name={"proicons:chevron-right"} class="icon" />
+  <div class="icon-wrapper">
+    <Icon name={"proicons:chevron-right"} class="icon" />
+  </div>
 </div>
 
 <style>
@@ -25,7 +30,19 @@ import { Icon } from "astro-icon/components";
     transition: transform 0.2s ease-in-out;
   }
 
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .icon-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+  }
+
   .icon {
-    margin-right: auto;
+    margin-left: auto;
   }
 </style>
