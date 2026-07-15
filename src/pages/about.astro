@@ -67,4 +67,24 @@ import Layout from "../layouts/Layout.astro";
     align-items: center;
     justify-content: center;
   }
+
+  @media (max-width: 450px) {
+    .main-content {
+      flex-direction: column-reverse;
+      height: auto;
+    }
+
+    .left-column,
+    .right-column {
+      flex: none;
+      width: 100%;
+    }
+    .left-column {
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+    .skill {
+      min-width: 100%;
+    }
+  }
 </style>
