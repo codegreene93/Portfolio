@@ -6,57 +6,111 @@ import amyImage from "../assets/amy-without-background.png";
 ---
 
 <Layout title="Home">
-  <Nav />
+  <Nav class="nav" />
   <div class="main-content">
+    <div class="green-ball"></div>
     <div class="left-column">
-      <p>
-        Hello, I'm Amy. <br />
-        I'm a Frontend Software Engineer.
-      </p>
-      <p>4 Years of Experience</p>
+      <p class="job-title">- Front End Software Engineer</p>
+      <h1 class="main-title">I build applications for all users</h1>
+      <a href="#portfolio" class="portfolio-button">View My Work</a>
     </div>
-    <Image
-      src={amyImage}
-      alt="An image of Amy Greene"
-      width="400"
-      height="450"
-    />
     <div class="right-column">
-      <p>
-        I enjoy building beautiful, accessible web applications that focus on
-        user experience.
-      </p>
-      <a href="/portfolio">View My Work</a>
+      <Image
+        src={amyImage}
+        alt="An image of Amy Greene"
+        width="500"
+        height="550"
+      />
     </div>
   </div>
+
+  <style>
+    .main-content {
+      height: 90vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .left-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
+      padding-left: 50px;
+    }
+
+    .main-content {
+      position: relative;
+      z-index: 0;
+    }
+
+    .green-ball {
+      width: 300px;
+      height: 300px;
+      background-color: #cdd4b1;
+      border-radius: 50%;
+      position: absolute;
+      top: -80px;
+      right: -50px;
+      z-index: -1;
+    }
+
+    .job-title {
+      font-size: 1rem;
+      color: #dca278;
+    }
+
+    .main-title {
+      font-size: 2.5rem;
+      color: #2a2218;
+      font-weight: 400;
+      font-family: var(--font-instrument-serif), serif;
+    }
+
+    .portfolio-button {
+      background-color: #2a2218;
+      color: #fff9e2;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.2s ease-in-out;
+      border-radius: 32px;
+      text-decoration: none;
+    }
+
+    .portfolio-button:hover {
+      background-color: #dca278;
+      color: #2e2118;
+    }
+
+    Image {
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </Layout>
-
-<style>
-  .main-content {
-    height: calc(100vh - 50px);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .left-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  Image {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .right-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-</style>
