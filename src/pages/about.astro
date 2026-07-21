@@ -5,9 +5,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="About">
-  <Nav />
   <div class="main-content">
     <div class="left-column">
+      <div class="pink-backdrop"></div>
       <Skill
         icon="proicons:code"
         title="Frontend Development"
@@ -28,7 +28,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <div class="right-column">
-      <h1>About Me</h1>
+      <div class="green-backdrop"></div>
       <p>
         I've spent the last few years working as a Front end Developer, building
         websites and products that are intuitive, accessible, and enjoyable to
@@ -41,50 +41,74 @@ import Layout from "../layouts/Layout.astro";
       </p>
     </div>
   </div>
-</Layout>
 
-<style>
-  .main-content {
-    display: flex;
-    flex-direction: row;
-    height: calc(100vh - 50px);
-  }
-
-  .left-column {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .right-column {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media (max-width: 450px) {
+  <style>
     .main-content {
-      flex-direction: column-reverse;
-      height: auto;
+      display: flex;
+      flex-direction: row;
+      height: calc(100vh - 50px);
     }
 
-    .left-column,
-    .right-column {
-      flex: none;
-      width: 100%;
+    .green-backdrop {
+      position: absolute;
+      top: 10;
+      right: 0;
+      width: 60%;
+      height: 90%;
+      background-color: #cdd4b1;
+      border-radius: 50px 0 0 50px;
+      z-index: -2;
     }
+
+    .pink-backdrop {
+      position: absolute;
+      top: 10;
+      left: 0;
+      width: 45%;
+      height: 70%;
+      background-color: #c18f8b;
+      border-radius: 0 50px 50px 0;
+      z-index: -1;
+    }
+
     .left-column {
-      margin-bottom: 2rem;
-      margin-top: 2rem;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
     }
-    .skill {
-      min-width: 100%;
+
+    .right-column {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
     }
-  }
-</style>
+
+    @media (max-width: 450px) {
+      .main-content {
+        flex-direction: column-reverse;
+        height: auto;
+      }
+
+      .left-column,
+      .right-column {
+        flex: none;
+        width: 100%;
+      }
+      .left-column {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+      .skill {
+        min-width: 100%;
+      }
+    }
+  </style>
+</Layout>
