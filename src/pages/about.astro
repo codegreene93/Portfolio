@@ -12,7 +12,9 @@ import Layout from "../layouts/Layout.astro";
 
     <div class="right-column">
       <div class="green-backdrop"></div>
-      <p>
+      <h1 class="about-me">About Me</h1>
+      <h2 class="cta">I love building accessible products with users in mind</h2>
+      <p class="summary">
         I've spent the last few years working as a Front end Developer, building
         websites and products that are intuitive, accessible, and enjoyable to
         use. What I enjoy most is bringing designs to life and thinking about
@@ -68,10 +70,29 @@ import Layout from "../layouts/Layout.astro";
       display: flex;
       flex: 1;
       flex-direction: column;
-      text-align: center;
       align-items: center;
       justify-content: center;
       z-index: 1;
+    }
+    .summary{
+      text-align: justify;
+      padding: 0 2rem;
+      line-height: 1.5rem;
+
+    }
+
+    .about-me {
+      text-align: left;
+      font-size: 1.2rem;
+      color: #DCA278;
+      text-decoration: underline;
+      font-weight: 400;
+    }
+
+    .cta {
+      font-size: 2rem;
+      font-family: var(--font-instrument-serif), serif;
+      font-weight: 400;
     }
 
     @media (max-width: 450px) {

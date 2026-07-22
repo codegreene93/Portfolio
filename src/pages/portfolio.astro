@@ -6,10 +6,10 @@ import dogImage from "../assets/dog.jpg";
 ---
 
 <Layout title="Portfolio">
-  <Nav />
-  <h1>My Portfolio</h1>
+  <h1 class="portfolio-heading">Favourite Works</h1>
+  <h3 class="portfolio-cta">Projects I'm Proud of</h3>
 
-  <p>
+  <p class="portfolio-summary">
     Below is a few passion projects I've worked on. They are mostly me tinkering
     with new and existing technology and seeing how it works. Take this website
     for example. I was curious how astro works so I thought it would be a fun
@@ -22,4 +22,26 @@ import dogImage from "../assets/dog.jpg";
     alt="terrier running through the grass"
     title="Dog of the Day"
   />
+
+  <style>
+    .portfolio-heading {
+      text-align: left;
+      font-size: 1.2rem;
+      color: #DCA278;
+      font-weight: 400;
+      padding: 0 1rem;
+    }
+    .portfolio-cta {
+      font-family: var(--font-instrument-serif), serif;
+      font-size: 2rem;
+      font-weight: 400;
+      padding: 0 1rem;
+
+    }
+    .portfolio-summary {
+      font-size: 1.2rem;
+      text-align: justify;
+      padding: 0 1rem;
+    }
+  </style>
 </Layout>
