@@ -3,12 +3,20 @@ import Nav from "../components/Nav.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Contact Me">
-  <Nav />
-  <p>
-    Thanks so much for stopping by, should you wish to reach our please feel
-    free to fill out the form below, or reach out to me via email or LinkedIn.
-  </p>
+<Layout title="Contact-Me">
+
+  <div class="contact">
+    <h1 class="heading">Let's have a chat</h1>
+
+    <h3 class="cta">How can I help you?</h3>
+
+    <p class="main-content">I'm always open to having a conversation. Feel free to reach out if you think there is something I could help you with. Whether that be a project, role or you just want to speak my inbox is always free.</p>
+
+
+    <a class="email-button" href="mailto:test@test.com">Click to Mail</a>
+
+    <a class="download-button" href="tel:+447900000000">Change to a download</a>
+  </div>
 
   <form
     class="contact-form"
@@ -26,6 +34,32 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+
+  .contact {
+    background-color: #2A2218;
+  }
+
+  .heading {
+    text-align: left;
+    font-size: 1.2rem;
+    color: #DCA278;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+
+  .cta {
+    text-align: left;
+    font-size: 2rem;
+    color: #FFF9E2;
+  }
+
+  .main-content {
+    color: #B09870;
+  }
+
+
+
+  //old contact form
   .contact-form {
     display: flex;
     flex-direction: column;
