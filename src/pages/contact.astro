@@ -13,30 +13,22 @@ import Layout from "../layouts/Layout.astro";
     <p class="main-content">I'm always open to having a conversation. Feel free to reach out if you think there is something I could help you with. Whether that be a project, role or you just want to speak my inbox is always free.</p>
 
 
-    <a class="email-button" href="mailto:test@test.com">Click to Mail</a>
+    <a class="email-btn" href="mailto:test@test.com">Click to Mail</a>
 
-    <a class="download-button" href="tel:+447900000000">Change to a download</a>
+    <a class="download-btn" href="tel:+447900000000">Change to a download</a>
   </div>
-
-  <form
-    class="contact-form"
-    method="POST"
-    action="mailto:amy.greene029@gmail.com"
-  >
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required />
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
 </Layout>
 
 <style>
 
   .contact {
     background-color: #2A2218;
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 0 auto;
   }
 
   .heading {
@@ -57,48 +49,23 @@ import Layout from "../layouts/Layout.astro";
     color: #B09870;
   }
 
-
-
-  //old contact form
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+  .email-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DCA278;
+    color: #2A2218;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-right: 20px;
   }
 
-  .contact-form label {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  textarea {
-    height: 150px;
-    resize: none;
-  }
-
-  .contact-form button {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #cdd4b1;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bold;
-  }
-
-  .contact-form button:hover {
-    background-color: #b0c48f;
+  .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DCA278;
+    text-decoration: none;
+    border-radius: 8px;
+    color: #2A2218;
   }
 </style>
