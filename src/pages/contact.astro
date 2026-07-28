@@ -6,6 +6,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Contact-Me">
 
   <div class="contact">
+    <div class="right-circle"></div>
     <h1 class="heading">Let's have a chat</h1>
 
     <h3 class="cta">How can I help you?</h3>
@@ -16,6 +17,7 @@ import Layout from "../layouts/Layout.astro";
     <a class="email-btn" href="mailto:test@test.com">Click to Mail</a>
 
     <a class="download-btn" href="tel:+447900000000">Change to a download</a>
+    <div class="left-circle"></div>
   </div>
 </Layout>
 
@@ -25,17 +27,19 @@ import Layout from "../layouts/Layout.astro";
     background-color: #2A2218;
     position: relative;
     padding: 20px;
+
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
+    z-index: 1;
+    overflow: hidden;
   }
 
   .heading {
     text-align: left;
     font-size: 1.2rem;
     color: #DCA278;
-    text-decoration: underline;
     font-weight: 400;
   }
 
@@ -49,6 +53,29 @@ import Layout from "../layouts/Layout.astro";
     color: #B09870;
   }
 
+   .right-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #DCA278;
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
+    z-index: -1;
+     opacity: 0.2;
+  }
+
+   .left-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+     border-radius: 50%;
+     background-color: #CDD4B1;
+     bottom: -120px;
+     left: 50px;
+     opacity: 0.1;
+     z-index: -1;
+   }
   .email-btn {
     display: inline-block;
     padding: 10px 20px;
