@@ -1,11 +1,11 @@
 ---
 import { Icon } from "astro-icon/components";
 
-const { image, title } = Astro.props;
+const { image, title, backgroundColor = "transparent" } = Astro.props;
 const imageSrc = typeof image === "string" ? image : image?.src;
 ---
 
-<div class="card">
+<div class="card" style={{ "--card-bg": backgroundColor }}>
   <img src={imageSrc} alt={title} />
   <h2>{title}</h2>
   <slot />
@@ -21,8 +21,8 @@ const imageSrc = typeof image === "string" ? image : image?.src;
     padding: 16px;
     margin: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    max-height: 400px;
+    max-width: 800px;
+    max-height: 800px;
   }
 
   .card:hover {

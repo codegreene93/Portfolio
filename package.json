@@ -16,9 +16,10 @@
     "@fortawesome/free-brands-svg-icons": "^7.3.0",
     "@fortawesome/free-regular-svg-icons": "^7.3.0",
     "@fortawesome/free-solid-svg-icons": "^7.3.0",
-    "@iconify-json/proicons": "^1.2.19",
+    "@iconify-json/mdi": "^1.2.3",
     "astro": "^6.4.7",
     "astro-icon": "^1.1.5",
-    "gsap": "^3.15.0"
+    "gsap": "^3.15.0",
+    "prettier": "^3.9.6"
   }
 }
